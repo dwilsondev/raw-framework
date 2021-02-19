@@ -191,7 +191,7 @@ Global constants are accessible throughout the entire project, mostly to set pat
 
 ## Version History
 
-### 2 - Feb 18th, 2021
+### 2.0.0 - Feb 18th, 2021
 * Updated global constants
 * Moved config.php to app/
 * Removed app_folder and default_controller from config.php. (redundant since they are defined constants)
