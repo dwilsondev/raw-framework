@@ -1,0 +1,14 @@
+# This htaccess is used to reroute requests so they can be processed by the core
+# kernel (system/core/kernel.php).
+
+# Set the RewriteBase to the name of the parent folder. Or leave it blank if
+# vhosts is enabled.
+Options -MultiViews
+RewriteEngine On
+
+RewriteBase /raw-framework
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
