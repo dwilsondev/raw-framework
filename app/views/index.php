@@ -79,7 +79,7 @@
     <body>
 		<header>
             <div class="container">
-                <h1><?php echo $data['title']; ?> <span class="ver">2.0.0</span></h1>
+                <h1><?php echo $data['title']; ?> <span class="ver">2.0.1</span></h1>
             </div>
         </header>
 

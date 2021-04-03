@@ -6,7 +6,7 @@
      * 
      * @link https://github.com/dwilsondev
      * 
-     * @version 2.0.0
+     * @version 2.0.1
      * 
      * This file loads a new instance of Raw Framework. Config data is loaded
      * to set folder paths.
