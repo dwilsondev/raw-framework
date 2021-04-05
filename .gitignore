@@ -46,4 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 .vscode
+.project
+.buildpath
+.settings
 vendor
