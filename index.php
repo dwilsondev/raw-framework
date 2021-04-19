@@ -2,7 +2,7 @@
 
     /**
      * 
-     * @author DeAndre Wilson <dre@dre.io>
+     * @author DeAndre Wilson <hmu@drewilson.dev>
      * 
      * @link https://github.com/dwilsondev
      * 
