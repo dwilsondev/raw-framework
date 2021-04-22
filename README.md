@@ -1,5 +1,6 @@
 # Raw Framework 2
 Raw Framework is a simple, easy to use PHP MVC framework with built-in support for Twig, Plates, and Mustache template engines.
+![screenshot](https://cdn.drewilson.dev/public/for_github/raw-framework-screenshot.png)
 
 ## Requirements
 Raw Framework requires at least PHP 7.0.0 or higher and works with PHP 8. 
