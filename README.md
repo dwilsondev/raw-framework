@@ -17,7 +17,7 @@ Download zip from GitHub. It will have everything set up for you already. All yo
 
 ## Prep
 ### Prepare Project Folder
-Assuming you used to composer command from inside your project folder, move everything out of 
+Assuming you used the composer command from inside your project folder, move everything out of 
 
 `vendor/dwilsondev/raw-framework` to the root of your project folder. It's okay if your OS asks to overwrite some files. Not required if you downloaded the zip.
 
