@@ -141,6 +141,28 @@ Load and instantiate a model.
 
 * $query_string (String) MySQL string to be queried.
 
+`db_fetch`
+
+Fetch a single record.
+* $query_string (String) $query_string (String) MySQL query string.
+
+* $bind_array (Array) optional array of values to bind for prepared statements.
+
+`db_fetch_all`
+
+Fetch a multiple records.
+* $query_string (String) $query_string (String) MySQL query string.
+
+* $bind_array (Array) optional array of values to bind for prepared statements.
+
+`db_execute`
+
+Execute a MySQL statement.
+* $statement_string (String) $query_string (String) MySQL query string.
+
+* $bind_array (Array) array of values to bind for prepared statements.
+
+
 ## Config File
 The `config.php` file contains global constants accessible throughout your entire project. You can put other config data in this file if needed.
 
