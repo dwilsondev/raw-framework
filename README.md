@@ -137,35 +137,14 @@ Load and instantiate a model.
 * $model_name (String) name of the model file. If the file is named store_model.php, you would enter "store_model".
 
 ## Model Methods
-`db ()`
+`db ($query_string)`
 
-Connect to database using PDO. Available when extending the main model. Be sure to configure your database connection before using this method.
-EXAMPLE
-```php
-Class Store extends Model {
-    
-    private function listInStock() {
-        $connect = $this->db();
-
-        $sql = "SELECT `product_name` FROM `products` WHERE `instock` = ?";
-        $statement = $connect->prepare($sql);
-        $statement->execute(array("true"));
-        $results = $statement->fetchAll();
-        
-        if(empty($results)) {
-            return false;
-        }
-        
-        return $results;
-    }
-    
-}
-```
+* $query_string (String) MySQL string to be queried.
 
 ## Config File
-Located inside of the app folder is config.php. It contains a global constant which has configuration options for your project. You can use this config file to store additional options for your project.
+The `config.php` file contains global constants accessible throughout your entire project. You can put other config data in this file if needed.
 
-Please do not store database config data, API keys, or any data that could put your project at risk as the CONFIG constant is accessible throughout the entire project. Instead, store database config in its own file or in the main model. Store API keys in their respective config files, via environment variables, or outside your project entirely.
+Please do not store database config data, API keys, or any data that could put your project at risk as this file is accessible throughout the entire project. Instead, store database config in `system/database.php`, Store API keys in their respective config files, via environment variables, or outside your project entirely.
 
 * template_engine - Specify the default template engine to load when using the `render` function. Can be set to `"twig"`, `"plates"`, or `"mustache"`.
 
@@ -191,6 +170,11 @@ Global constants are accessible throughout the entire project, mostly to set pat
 `ROOT_FOLDER` - Name of project folder.
 
 ## Version History
+
+### 2.0.1 - April 23th, 2021
+* Updated main model.php. Now has a fetch, fetch all, and a generic execution functions.
+* Moved config and autoloader files to the root.
+* Added a database.php for storing database credentials. Located in system folder.
 
 ### 2.0.0 - Feb 18th, 2021
 * Updated global constants
