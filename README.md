@@ -110,11 +110,13 @@ An example of customizing the `render` function with additional Mustache templat
 Again, please refer to template engine documentation for more details.
 
 ## Controller Methods
-`view (string $view_name, array $data = [])` - Loads a PHP or HTML file from views folder.
+`view (string $view_name, array $data = [])`
+Loads a PHP or HTML file from views folder.
 
 * $view_name (String) filename in the views folder. If the file is named homepage.php, you would enter "homepage" without the file extension. For names inside of folders you can enter something like "pages/hompage".
 
 * $data (Array) optional array with the data to be passed into the view.
+
 
 `render (string $template, array $data = [], string $engine, string $dir)`
 
@@ -129,6 +131,7 @@ Load a PHP template, a PHP file or HTML file.
 
 * $dir (String) optional directory specifying where to load the template from. By default, templates are loaded from the views folder. By setting $dir, you can load a template from anywhere in your project. For example, loading from a folder called templates in app/ `app/templates`
 
+
 `model (string $model_name)`
 
 Load and instantiate a model.
@@ -139,6 +142,7 @@ Load and instantiate a model.
 
 * $query_string (String) MySQL string to be queried.
 
+
 `db_fetch`
 
 Fetch a single record.
@@ -146,12 +150,14 @@ Fetch a single record.
 
 * $bind_array (Array) optional array of values to bind for prepared statements.
 
+
 `db_fetch_all`
 
 Fetch a multiple records.
 * $query_string (String) $query_string (String) MySQL query string.
 
 * $bind_array (Array) optional array of values to bind for prepared statements.
+
 
 `db_execute`
 
