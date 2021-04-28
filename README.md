@@ -110,9 +110,7 @@ An example of customizing the `render` function with additional Mustache templat
 Again, please refer to template engine documentation for more details.
 
 ## Controller Methods
-`view (string $view_name, array $data = [])`
-
-Loads a PHP or HTML file from views folder.
+`view (string $view_name, array $data = [])` - Loads a PHP or HTML file from views folder.
 
 * $view_name (String) filename in the views folder. If the file is named homepage.php, you would enter "homepage" without the file extension. For names inside of folders you can enter something like "pages/hompage".
 
